@@ -1,0 +1,87 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Student Marks Analysis</title>
+</head>
+<body>
+  <h2>Student Marks Analysis</h2>
+
+  <script>
+    //  Taking marks of 10 students
+    var marks = [];
+    for (var i = 0; i < 10; i++) {
+      var mark = prompt("Enter marks of student " + (i + 1) + ":");
+      mark = Number(mark); 
+      marks.push(mark);
+    }
+
+    //  Initialize counters
+    var Aplus = 0, A = 0, B = 0, C = 0, D = 0, F = 0;
+    var passed = 0, failed = 0;
+
+    //  Checking grades and count pass/fail
+    for (var i = 0; i < marks.length; i++) {
+      var m = marks[i];
+
+      // Grade checking
+      if (m >= 90) {
+        Aplus++;
+      } else if (m >= 80) {
+        A++;
+      } else if (m >= 70) {
+        B++;
+      } else if (m >= 60) {
+        C++;
+      } else if (m >= 50) {
+        D++;
+      } else {
+        F++;
+      }
+
+      // Pass/Fail
+      if (m >= 50) {
+        passed++;
+      } else {
+        failed++;
+      }
+    }
+
+    //  Find total, average, lowest, and highest
+    var total = 0;
+    var lowest = marks[0];
+    var highest = marks[0];
+
+    for (var i = 0; i < marks.length; i++) {
+      total = total + marks[i];
+
+      if (marks[i] < lowest) {
+        lowest = marks[i];
+      }
+      if (marks[i] > highest) {
+        highest = marks[i];
+      }
+    }
+
+    var average = total / marks.length;
+
+    //  Show output on browser we use documen.writein
+    document.write("<h3>Grade Summary:</h3>");
+    document.write("A+ Students: " + Aplus + "<br>");
+    document.write("A Students: " + A + "<br>");
+    document.write("B Students: " + B + "<br>");
+    document.write("C Students: " + C + "<br>");
+    document.write("D Students: " + D + "<br>");
+    document.write("F Students: " + F + "<br><br>");
+
+    document.write("<h3>Pass/Fail Summary:</h3>");
+    document.write("Passed Students: " + passed + "<br>");
+    document.write("Failed Students: " + failed + "<br><br>");
+
+    document.write("<h3>Class Performance:</h3>");
+    document.write("Average Marks: " + average + "<br>");
+    document.write("Lowest Marks: " + lowest + "<br>");
+    document.write("Highest Marks: " + highest + "<br>");
+  </script>
+
+</body>
+</html>

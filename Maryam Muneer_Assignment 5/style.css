@@ -1,0 +1,71 @@
+ /* Reset & Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;  
+  width: 100%;     
+}
+
+.column {
+  flex: 1;               
+  min-height: 100vh;    
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.left {
+  background: url('https://picsum.photos/800/1000?random=1') no-repeat center center/cover;
+}
+
+.right {
+  background: url('https://picsum.photos/800/1000?random=2') no-repeat center center/cover;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5); 
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.overlay h2 {
+  font-family: Georgia, serif; 
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.overlay p {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.overlay button {
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.overlay button:hover {
+  background: #fff;
+  color: #000;
+  transform: translateY(-3px); 
+}
