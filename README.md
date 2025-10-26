@@ -45,4 +45,20 @@ Through these assignments, I aim to:
 
 ---
 
-## 📂 Folder Structure
+## 🚀 Preview  
+Here’s a glimpse of one of my HTML/CSS assignments 👇  
+*(You can add screenshots or demo links later)*  
+![Preview](path/to/screenshot.png)
+
+---
+
+## 💬 Note  
+All assignments are part of my learning process — feedback, suggestions, and improvements are always welcome! 😊  
+
+---
+
+## 👩‍💻 Author  
+**Maryam Muneer**  
+📍 Web Developer & Learner  
+🔗 [GitHub Profile](https://github.com/maryam-muneer)
+
